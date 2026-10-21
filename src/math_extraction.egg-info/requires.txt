@@ -1,0 +1,16 @@
+pymupdf==1.28.2
+pydantic==2.14.1
+
+[app]
+fastapi
+uvicorn
+python-multipart
+
+[dev]
+pytest
+fastapi
+httpx
+python-multipart
+
+[llm]
+anthropic

@@ -1,0 +1,318 @@
+{
+  "document_id": "doc_d4d8e2c59800",
+  "source_file": "lecture_notes_latex.pdf",
+  "sha256": "d4d8e2c59800ab82bcf758926992ca749fdc1b75c242f2fb5645e847718763bd",
+  "n_pages": 14,
+  "pymupdf_version": "1.28.2",
+  "pipeline_version": "0.1.0",
+  "render_dpi": 100,
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "TeX",
+    "producer": "pdfTeX-1.40.25",
+    "creationDate": "D:20261018013020Z",
+    "modDate": "D:20261018013020Z",
+    "trapped": "",
+    "encryption": null
+  },
+  "coordinate_system": "PDF points, unrotated page space, origin top-left",
+  "pages": [
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 0,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts"
+      ],
+      "n_text_blocks": 3,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 375,
+      "n_math_font_chars": 0,
+      "size_group": 0,
+      "render_path": "renders/page_0000.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 1,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "155 chars in math fonts"
+      ],
+      "n_text_blocks": 34,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 1,
+      "n_chars": 1115,
+      "n_math_font_chars": 155,
+      "size_group": 0,
+      "render_path": "renders/page_0001.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 2,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "129 chars in math fonts"
+      ],
+      "n_text_blocks": 15,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 1423,
+      "n_math_font_chars": 129,
+      "size_group": 0,
+      "render_path": "renders/page_0002.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 3,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "170 chars in math fonts"
+      ],
+      "n_text_blocks": 29,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 1,
+      "n_chars": 1316,
+      "n_math_font_chars": 170,
+      "size_group": 0,
+      "render_path": "renders/page_0003.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 4,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "138 chars in math fonts"
+      ],
+      "n_text_blocks": 16,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 1,
+      "n_chars": 1007,
+      "n_math_font_chars": 138,
+      "size_group": 0,
+      "render_path": "renders/page_0004.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 5,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "270 chars in math fonts"
+      ],
+      "n_text_blocks": 22,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 1,
+      "n_chars": 945,
+      "n_math_font_chars": 270,
+      "size_group": 0,
+      "render_path": "renders/page_0005.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 6,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "255 chars in math fonts"
+      ],
+      "n_text_blocks": 31,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 939,
+      "n_math_font_chars": 255,
+      "size_group": 0,
+      "render_path": "renders/page_0006.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 7,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "165 chars in math fonts"
+      ],
+      "n_text_blocks": 21,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 12,
+      "n_chars": 1013,
+      "n_math_font_chars": 165,
+      "size_group": 0,
+      "render_path": "renders/page_0007.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 8,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "187 chars in math fonts"
+      ],
+      "n_text_blocks": 36,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 1,
+      "n_chars": 811,
+      "n_math_font_chars": 187,
+      "size_group": 0,
+      "render_path": "renders/page_0008.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 9,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "253 chars in math fonts"
+      ],
+      "n_text_blocks": 30,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 30,
+      "n_chars": 762,
+      "n_math_font_chars": 253,
+      "size_group": 0,
+      "render_path": "renders/page_0009.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 10,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "204 chars in math fonts"
+      ],
+      "n_text_blocks": 29,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 8,
+      "n_chars": 868,
+      "n_math_font_chars": 204,
+      "size_group": 0,
+      "render_path": "renders/page_0010.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 11,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "293 chars in math fonts"
+      ],
+      "n_text_blocks": 30,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 1,
+      "n_chars": 856,
+      "n_math_font_chars": 293,
+      "size_group": 0,
+      "render_path": "renders/page_0011.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 12,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "207 chars in math fonts"
+      ],
+      "n_text_blocks": 35,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 1073,
+      "n_math_font_chars": 207,
+      "size_group": 0,
+      "render_path": "renders/page_0012.png",
+      "render_dpi": 100
+    },
+    {
+      "document_id": "doc_d4d8e2c59800",
+      "page_index": 13,
+      "printed_page_number": null,
+      "width": 612.0,
+      "height": 792.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "39 chars in math fonts"
+      ],
+      "n_text_blocks": 6,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 554,
+      "n_math_font_chars": 39,
+      "size_group": 0,
+      "render_path": "renders/page_0013.png",
+      "render_dpi": 100
+    }
+  ]
+}

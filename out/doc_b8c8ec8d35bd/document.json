@@ -1,0 +1,88 @@
+{
+  "document_id": "doc_b8c8ec8d35bd",
+  "source_file": "single_column.pdf",
+  "sha256": "b8c8ec8d35bdce5221f2d5de8cbd43f79c547f37d6517cfbd69eb243387dd531",
+  "n_pages": 3,
+  "pymupdf_version": "1.28.2",
+  "pipeline_version": "0.1.0",
+  "render_dpi": 150,
+  "metadata": {
+    "format": "PDF 1.5",
+    "title": "",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "TeX",
+    "producer": "pdfTeX-1.40.25",
+    "creationDate": "D:20261019013319Z",
+    "modDate": "D:20261019013319Z",
+    "trapped": "",
+    "encryption": null
+  },
+  "coordinate_system": "PDF points, unrotated page space, origin top-left",
+  "pages": [
+    {
+      "document_id": "doc_b8c8ec8d35bd",
+      "page_index": 0,
+      "printed_page_number": null,
+      "width": 432.0,
+      "height": 360.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "60 chars in math fonts"
+      ],
+      "n_text_blocks": 7,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 1316,
+      "n_math_font_chars": 60,
+      "size_group": 0,
+      "render_path": "renders/page_0000.png",
+      "render_dpi": 150
+    },
+    {
+      "document_id": "doc_b8c8ec8d35bd",
+      "page_index": 1,
+      "printed_page_number": null,
+      "width": 432.0,
+      "height": 360.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "31 chars in math fonts"
+      ],
+      "n_text_blocks": 6,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 1370,
+      "n_math_font_chars": 31,
+      "size_group": 0,
+      "render_path": "renders/page_0001.png",
+      "render_dpi": 150
+    },
+    {
+      "document_id": "doc_b8c8ec8d35bd",
+      "page_index": 2,
+      "printed_page_number": null,
+      "width": 432.0,
+      "height": 360.0,
+      "rotation": 0,
+      "route": "born_digital",
+      "route_reasons": [
+        "text layer uses embedded document fonts",
+        "16 chars in math fonts"
+      ],
+      "n_text_blocks": 5,
+      "n_image_blocks": 0,
+      "n_vector_drawings": 0,
+      "n_chars": 253,
+      "n_math_font_chars": 16,
+      "size_group": 0,
+      "render_path": "renders/page_0002.png",
+      "render_dpi": 150
+    }
+  ]
+}

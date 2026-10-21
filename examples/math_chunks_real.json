@@ -1,0 +1,2476 @@
+{
+  "document_id": "doc_e3fd0cf978ff",
+  "source_file": "lecture_notes_redacted__1__1.pdf",
+  "coordinate_system": "PDF points, unrotated page space, origin top-left",
+  "page_numbering": "pages are 1-based here; regions use page_index (0-based)",
+  "chunks": [
+    {
+      "id": "doc_e3fd0cf978ff-S0000",
+      "type": "definition",
+      "label": "Definition 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 1. A group is the data of a pair (G, f) consisting of a set G together with a function\nf : G × G −→G\nsuch that:\n(A) For all g1, g2, g3 ∈G,\nf (︁g1, f(g2, g3) )︁= f (︁f(g1, g2), g3 )︁.\n(Id) There is an e ∈G such that, for every g ∈G,\nf(e, g) = f(g, e) = g.\n(Inv) For every g ∈G, there is a g′ ∈G such that\nf(g, g′) = f(g′, g) = e.\nFurthermore, G is said to be abelian, or commutative, if\nf(g1, g2) = f(g2, g1)\nfor all pairs g1, g2 ∈G.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        1
+      ],
+      "page_regions": [
+        {
+          "page_index": 0,
+          "bbox": [
+            69.878,
+            243.605,
+            536.149,
+            518.637
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0000-b0003",
+        "doc_e3fd0cf978ff-p0000-b0004",
+        "doc_e3fd0cf978ff-p0000-b0005",
+        "doc_e3fd0cf978ff-p0000-b0006",
+        "doc_e3fd0cf978ff-p0000-b0007",
+        "doc_e3fd0cf978ff-p0000-b0008",
+        "doc_e3fd0cf978ff-p0000-b0009",
+        "doc_e3fd0cf978ff-p0000-b0010",
+        "doc_e3fd0cf978ff-p0000-b0011",
+        "doc_e3fd0cf978ff-p0000-b0012",
+        "doc_e3fd0cf978ff-p0000-b0013",
+        "doc_e3fd0cf978ff-p0000-b0014",
+        "doc_e3fd0cf978ff-p0000-b0015",
+        "doc_e3fd0cf978ff-p0000-b0016",
+        "doc_e3fd0cf978ff-p0000-b0017",
+        "doc_e3fd0cf978ff-p0000-b0018"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0001",
+      "type": "remark",
+      "label": "Remark 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 1. The labels (A), (Id) and (Inv) stand for associativity, identity and inverse.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        1
+      ],
+      "page_regions": [
+        {
+          "page_index": 0,
+          "bbox": [
+            72.0,
+            528.735,
+            490.833,
+            539.671
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0000-b0019"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0002",
+      "type": "remark",
+      "label": "Remark 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 2. We remark that the element e of condition (Inv) in Definition 1 is the same element e of condition (Id) of loc. cit., which from Proposition 1 is unique.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        1
+      ],
+      "page_regions": [
+        {
+          "page_index": 0,
+          "bbox": [
+            72.0,
+            551.251,
+            540.175,
+            575.736
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0000-b0020"
+      ],
+      "parent": null,
+      "references": [
+        {
+          "kind": "explicit_reference",
+          "target_text": "Definition 1",
+          "target_segment_id": "doc_e3fd0cf978ff-S0000",
+          "resolved": true,
+          "candidates": [
+            "doc_e3fd0cf978ff-S0000"
+          ],
+          "evidence_quote": "ement e of condition (Inv) in Definition 1 is the same element e of cond"
+        },
+        {
+          "kind": "explicit_reference",
+          "target_text": "Proposition 1",
+          "target_segment_id": "doc_e3fd0cf978ff-S0003",
+          "resolved": true,
+          "candidates": [
+            "doc_e3fd0cf978ff-S0003"
+          ],
+          "evidence_quote": "(Id) of loc. cit., which from Proposition 1 is unique."
+        }
+      ],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0003",
+      "type": "proposition",
+      "label": "Proposition 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proposition 1. Consider a set G with a function f : G × G →G which satisfies conditions (A) and (Id) above. Then the element e of condition (Id) is unique.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        1
+      ],
+      "page_regions": [
+        {
+          "page_index": 0,
+          "bbox": [
+            72.0,
+            587.188,
+            539.99,
+            611.801
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0000-b0021"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0004",
+      "type": "proof",
+      "label": "Proof.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof. Let e1 and e2 be two elements in G satisfying condition (Id). Then\ne1 = f(e1, e2) = e2\nwhere the first equality follows from the fact that e1 satisfies property (Id), and the second equality follows from the fact that e2 satisfies property (Id). In particular, e1 = e2.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        1
+      ],
+      "page_regions": [
+        {
+          "page_index": 0,
+          "bbox": [
+            72.0,
+            623.394,
+            540.095,
+            698.518
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0000-b0022",
+        "doc_e3fd0cf978ff-p0000-b0023",
+        "doc_e3fd0cf978ff-p0000-b0024"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0005",
+      "type": "notation",
+      "label": "Notation 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Notation 1. Given a group (G, f) and g1, g2 ∈G, we will use the notation\ng1 · g2 := f(g1, g2).\nIn particular, condition (A) translates into\ng1 · (g2 · g3) = (g1 · g2) · g3.\nMoreover, we will denote the identity element by 1.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            74.292,
+            432.18,
+            183.388
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0000",
+        "doc_e3fd0cf978ff-p0001-b0001",
+        "doc_e3fd0cf978ff-p0001-b0002",
+        "doc_e3fd0cf978ff-p0001-b0003",
+        "doc_e3fd0cf978ff-p0001-b0004"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0006",
+      "type": "notation",
+      "label": "Notation 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Notation 2. When writing a group G, we will often omit the operation f. So instead of writing “consider a group (G, f)”, we will often write “consider a group G”, when we believe that there is no ambiguity.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            194.968,
+            540.186,
+            233.002
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0005"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0007",
+      "type": "notation",
+      "label": "Notation 3.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Notation 3. If G is a commutative group, instead of writing · we will write + for the group operation. So for example instead of writing g1 · g2, we will write g1 + g2. If as above we use the notation + for the operation, we will denote the identity element by 0.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            244.454,
+            540.109,
+            282.616
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0006"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0008",
+      "type": "notation",
+      "label": "Notation 4.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Notation 4. Given g ∈G, we will denote by g−1 an element of G as in condition (Inv) of Definition 1.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            290.264,
+            540.107,
+            318.681
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0007"
+      ],
+      "parent": null,
+      "references": [
+        {
+          "kind": "explicit_reference",
+          "target_text": "Definition 1",
+          "target_segment_id": "doc_e3fd0cf978ff-S0000",
+          "resolved": true,
+          "candidates": [
+            "doc_e3fd0cf978ff-S0000"
+          ],
+          "evidence_quote": "of G as in condition (Inv) of Definition 1."
+        }
+      ],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0009",
+      "type": "proposition",
+      "label": "Proposition 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proposition 2. Let G be a group and let g ∈G be an element of G. Then:\n1. there is a unique element h such that g · h = h · g = 1.\n2. (g−1)−1 = g.\n3. (gh)−1 = h−1g−1.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            330.133,
+            434.335,
+            408.743
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0008",
+        "doc_e3fd0cf978ff-p0001-b0009",
+        "doc_e3fd0cf978ff-p0001-b0010",
+        "doc_e3fd0cf978ff-p0001-b0011"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0010",
+      "type": "proof",
+      "label": "Proof.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof. Exercise",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            420.35,
+            145.549,
+            431.259
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0012"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0011",
+      "type": "example",
+      "label": "Example 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Example 1. Here are some examples of groups:\n1. The additive integers (Z, +) are an abelian group.\n2. GLn = {A an n × n matrix : det A̸ = 0}\nwith matrix multiplication is a non-abelian group.\n3. (Q∗, ·) is a multiplicative non-abelian group.\n4. Non-example: {n ∈Z : n̸ = 0, ·}.\n5. Let X be a non-empty set and\nFun(X) := {f : X →X}.\nEquipped with composition. The pair\n(Fun(X), composition of functions)\nis not a group. If instead we restrict to bijective functions, then it is a group.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        2
+      ],
+      "page_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            72.0,
+            442.838,
+            468.11,
+            700.947
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0001-b0013",
+        "doc_e3fd0cf978ff-p0001-b0014",
+        "doc_e3fd0cf978ff-p0001-b0015",
+        "doc_e3fd0cf978ff-p0001-b0016",
+        "doc_e3fd0cf978ff-p0001-b0017",
+        "doc_e3fd0cf978ff-p0001-b0018",
+        "doc_e3fd0cf978ff-p0001-b0019",
+        "doc_e3fd0cf978ff-p0001-b0020",
+        "doc_e3fd0cf978ff-p0001-b0021",
+        "doc_e3fd0cf978ff-p0001-b0022",
+        "doc_e3fd0cf978ff-p0001-b0023"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0012",
+      "type": "definition",
+      "label": "Definition 2 (Permutation Group).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 2 (Permutation Group). If X is a set, the set of bijective functions from X to X, equipped with function composition is called the group of permutations of X and is denoted SX. If |X| = n, then we also write Sn.",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        3
+      ],
+      "page_regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            72.0,
+            74.42,
+            540.142,
+            113.435
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0002-b0000"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0013",
+      "type": "definition",
+      "label": "Definition 3 (Homomorphism of Group).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 3 (Homomorphism of Group). Let (G1, ·1) and (G2, ·2) be groups. A function f : G1 → G2 is said to be a homomorphism if\nf(g1 ·1 g2) = f(g1) ·2 f(g2).",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        3
+      ],
+      "page_regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            72.0,
+            123.906,
+            540.0,
+            174.649
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0002-b0001",
+        "doc_e3fd0cf978ff-p0002-b0002"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0014",
+      "type": "example",
+      "label": "Example 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Example 2. 1. The identity function Id: G →G.\n2. log: (R+, ·) −→(R, +).\n3. det: GLn −→(R \\ {0}, ·).",
+      "section": "1 Introduction",
+      "source_run": 0,
+      "pages": [
+        3
+      ],
+      "page_regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            72.0,
+            186.471,
+            380.766,
+            274.633
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0002-b0003",
+        "doc_e3fd0cf978ff-p0002-b0004",
+        "doc_e3fd0cf978ff-p0002-b0005"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0015",
+      "type": "definition",
+      "label": "Definition 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 1. Let G1, G2 be groups. We call a map f : (G1, ·1) →(G2, ·2) a homomorphism if\nf(g1 ·1 g2) = f(g1) ·2 f(g2) for all g1, g2 ∈G1",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            86.335,
+            526.97,
+            141.181
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0001",
+        "doc_e3fd0cf978ff-p0003-b0002"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0016",
+      "type": "remark",
+      "label": "Remark 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 1.\n(i) Let f : G1 →G2 be a group homomorphism. Let id1, id2 be the identity elements for\nG1, G2 respectively. We have that f(id1) = id2. This follows from\nf(id1) = f(id1 ·1 id1) = f(id1) ·2 f(id1)\nThis gives\nf(id1) = f(id1) ·2 f(id1)−1 = id2\n(ii) For any g ∈G1, we have f(g−1) = f(g)−1. This follows from\nid2 = f(id1) = f(g ·1 g−1) = f(g) ·2 f(g−1)\n(iii) Let f1 : G1 →G2 and f2 : G2 →G3 are group homomorphisms. Then f2 ◦f1 : G1 →\nG3 is also a group homomorphism. (Check as an exercise.)\n(iv) if f : G1 →G2 is a bijective group homomorphism, then f−1 is a group homomor-\nphism. (Check as an exercise.)",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            148.541,
+            526.974,
+            344.527
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0003",
+        "doc_e3fd0cf978ff-p0003-b0004",
+        "doc_e3fd0cf978ff-p0003-b0005",
+        "doc_e3fd0cf978ff-p0003-b0006",
+        "doc_e3fd0cf978ff-p0003-b0007",
+        "doc_e3fd0cf978ff-p0003-b0008",
+        "doc_e3fd0cf978ff-p0003-b0009",
+        "doc_e3fd0cf978ff-p0003-b0010",
+        "doc_e3fd0cf978ff-p0003-b0011",
+        "doc_e3fd0cf978ff-p0003-b0012",
+        "doc_e3fd0cf978ff-p0003-b0013",
+        "doc_e3fd0cf978ff-p0003-b0014"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0017",
+      "type": "definition",
+      "label": "Definition 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 2. We call f : G1 →G2 a group isomorphism if it is a bijective homomorphism.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            353.241,
+            525.819,
+            365.927
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0015"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0018",
+      "type": "example",
+      "label": "Example 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Example 1. Consider the map (R, +) 7→(R>0, ·) defined by the exponential map. This is a group isomorphism as it has an inverse defined by log.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            370.763,
+            526.973,
+            397.006
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0016"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0019",
+      "type": "definition",
+      "label": "Definition 3.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 3. Let G be a group. A subgroup of G is a subset H ⊆G so that\n(i) idG ∈H\n(ii) for all a, b ∈H, a · b ∈H\n(iii) for a ∈H, a−1 ∈H",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            405.721,
+            451.865,
+            471.138
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0017",
+        "doc_e3fd0cf978ff-p0003-b0018",
+        "doc_e3fd0cf978ff-p0003-b0019",
+        "doc_e3fd0cf978ff-p0003-b0020"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0020",
+      "type": "example",
+      "label": "Example 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Example 2. Take G = GL2 and H1 = {M ∈GL2 : det(M) = 1} and H2 = {id}.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            479.852,
+            473.393,
+            492.538
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0021"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0021",
+      "type": "remark",
+      "label": "Remark 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 2. (i) Notice that a subset of a group satisfying conditions (ii), (iii) but not (i) has to be the empty set.\n(ii) A non-example of a subgroup would be (Z\\{0}, ×) ⊆(Q\\{0}, ×). It satisfies conditions\n(i), (ii) but not (iii).",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            499.757,
+            526.965,
+            555.996
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0022",
+        "doc_e3fd0cf978ff-p0003-b0023",
+        "doc_e3fd0cf978ff-p0003-b0024"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0022",
+      "type": "remark",
+      "label": "Remark 3.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 3. One can show (check as an exercise) that an equivalent definition of a subgroup H ⊆G is subset satisfying\n(i) H̸ = ∅\n(ii) for every g1, g2 ∈H, g1 · g−1 2 ∈H",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            564.851,
+            526.961,
+            626.63
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0025",
+        "doc_e3fd0cf978ff-p0003-b0026",
+        "doc_e3fd0cf978ff-p0003-b0027",
+        "doc_e3fd0cf978ff-p0003-b0028"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0023",
+      "type": "example",
+      "label": "Example 3.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Example 3. Let G = Z. Define H = 3Z = {3 · n : n ∈Z}. Check that this is a subgroup.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            630.62,
+            511.166,
+            643.912
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0029"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0024",
+      "type": "remark",
+      "label": "Remark 4.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 4. (i) An alternative definition of a subgroup is a subset H ⊆G that is closed under group operation so that (H × H, ·G|H×H) is also a group.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            652.626,
+            526.963,
+            677.675
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0030"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0025",
+      "type": "definition",
+      "label": "Definition 4.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 4. Let f : G1 →G2 be a group homomorphism. We can define im(f) = f(G1) (in the set-theoritic sense) and ker(f) =: {g ∈G1 : f(g) = id2}.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        4
+      ],
+      "page_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            85.039,
+            685.342,
+            526.962,
+            710.98
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0003-b0031"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0026",
+      "type": "example",
+      "label": "Example 4.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Example 4. (i) Consider f : Z →C∗given by f(n) = e2πi· n 3 . Observe that ker(f) = 3Z.\n(ii) Consider f : GL2 →R∗defined by the determinant det. This is a group homomor-\nphism whose kernel is SL2(R).\n(iii) Consider f : Z →Z defined by f(n) = 3n. Then im(f) = 3Z and ker(f) = {0}.\nMotivated by these examples, we have the following the proposition.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        5
+      ],
+      "page_regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            85.039,
+            82.941,
+            526.985,
+            168.787
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0004-b0001",
+        "doc_e3fd0cf978ff-p0004-b0002",
+        "doc_e3fd0cf978ff-p0004-b0003",
+        "doc_e3fd0cf978ff-p0004-b0004",
+        "doc_e3fd0cf978ff-p0004-b0005",
+        "doc_e3fd0cf978ff-p0004-b0006"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0027",
+      "type": "proposition",
+      "label": "Probosition 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Probosition 1. Let f : G1 →G2 be a group homomorphism. Then ker(f) ⊆G1 and im(f) ⊆G2 are subgroups.",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        5
+      ],
+      "page_regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            85.039,
+            177.164,
+            526.956,
+            202.802
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0004-b0007"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": [
+        "label spelled 'Probosition' in source"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0028",
+      "type": "proof",
+      "label": "Proof.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof. (i) ker(f) is a subgroup. Let’s check the axioms. We know that f(id1) = id2 since f is a homomorphism. Hence id1 ∈ker(f). Let a, b ∈ker(f). Then we have\nf(a · b) = f(a) · f(b) = id2 · id2 = id2 hence a · b ∈ker(f). Finally, suppose that a ∈ker(f). We have\nid2 = f(a) = f(a · a · a−1) = f(a) · f(a) · f(a−1) = id2 · id2 ·f(a−1)\nand hence a−1 ∈ker(f).\n(ii) Showing that im(f) is a subgroup is left as an exercise.\n□",
+      "section": "1 Introduction",
+      "source_run": 1,
+      "pages": [
+        5
+      ],
+      "page_regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            85.039,
+            209.684,
+            526.963,
+            333.89
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0004-b0008",
+        "doc_e3fd0cf978ff-p0004-b0009",
+        "doc_e3fd0cf978ff-p0004-b0010",
+        "doc_e3fd0cf978ff-p0004-b0011",
+        "doc_e3fd0cf978ff-p0004-b0012",
+        "doc_e3fd0cf978ff-p0004-b0013"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0029",
+      "type": "definition",
+      "label": "Definition:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition: Given any groups G and H such that H < G (H is a subgroup of G), and any x ∈G, we define the left coset xH to be\nxH = {g ∈G : g = xh, h ∈H}\nLikewise for the right coset Hx = {g ∈G : g = hx, h ∈H}.",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        6
+      ],
+      "page_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            72.0,
+            265.637,
+            540.058,
+            344.84
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0005-b0003",
+        "doc_e3fd0cf978ff-p0005-b0004",
+        "doc_e3fd0cf978ff-p0005-b0005"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0030",
+      "type": "lemma",
+      "label": "Lemma:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Lemma: Let H < G, x, y ∈G. TFAE (the following are equivalent)\n1) xH = yH\n2) y−1x ∈H\n3) y = xh for some h ∈H\n4) xH ∩yH̸ = ∅",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        6
+      ],
+      "page_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            72.0,
+            361.621,
+            423.531,
+            471.365
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0005-b0006",
+        "doc_e3fd0cf978ff-p0005-b0007",
+        "doc_e3fd0cf978ff-p0005-b0008",
+        "doc_e3fd0cf978ff-p0005-b0009",
+        "doc_e3fd0cf978ff-p0005-b0010"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0031",
+      "type": "remark",
+      "label": "Note:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Note: condition (4) implies that if xH and yH share an element then xH = yH, so the left cosets form a partition of G.",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        6
+      ],
+      "page_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            72.0,
+            483.819,
+            540.022,
+            510.22
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0005-b0011"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": [
+        "label 'Note' mapped to remark"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0032",
+      "type": "proof",
+      "label": "Proof:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof:\n1) ⇒2) x ∈xH = yH ⇒x = yh ⇒y−1x = h ∈H\n2) ⇒3) y−1x ∈H ⇒(y−1x)−1 = x−1y ∈H ⇒y ∈xH\n3) ⇒4) y = xh ⇒y ∈xH, y = ye ⇒y ∈yH ⇒{y} ⊆xH ∩yH\n4) ⇒1) z ∈xH ∩yH ⇒z = xh1 = yh2 ⇒x = yh2h−1 1 ⇒x ∈yH.\nBy symmetry of switching variables we can also show y ∈xH. Now, to show xH = yH, we will prove xH ⊆yH, and ⊇can be proved via symmetry. Given x′ ∈xH, x′ = xh′\nfor some h′ and so:\nx′ = xh′ = yh2h−1 1 h′ ∈yH\nThus xH = yH.",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        6
+      ],
+      "page_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            72.0,
+            527.156,
+            540.009,
+            720.431
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0005-b0012",
+        "doc_e3fd0cf978ff-p0005-b0013",
+        "doc_e3fd0cf978ff-p0005-b0014",
+        "doc_e3fd0cf978ff-p0005-b0015",
+        "doc_e3fd0cf978ff-p0005-b0016",
+        "doc_e3fd0cf978ff-p0005-b0017",
+        "doc_e3fd0cf978ff-p0005-b0018",
+        "doc_e3fd0cf978ff-p0005-b0019",
+        "doc_e3fd0cf978ff-p0005-b0020",
+        "doc_e3fd0cf978ff-p0005-b0021"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0033",
+      "type": "definition",
+      "label": "Definition:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition: We denote\nG/H := {set of all left cosets of H in G}\nLikewise, we denote\nH\\G = {set of all right cosets of H in G}",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            89.058,
+            413.189,
+            168.261
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0000",
+        "doc_e3fd0cf978ff-p0006-b0001",
+        "doc_e3fd0cf978ff-p0006-b0002",
+        "doc_e3fd0cf978ff-p0006-b0003"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0034",
+      "type": "definition",
+      "label": "Definition:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition: The index of two groups H < G is the number of cosets of H made in G and is denoted\n|G : H| = |G/H|",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            177.227,
+            540.034,
+            218.074
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0004",
+        "doc_e3fd0cf978ff-p0006-b0005"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0035",
+      "type": "lemma",
+      "label": "Lemma:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Lemma: If |G| < ∞(G has a finite number of elements) and H < G then\n|G| = |H| ∗|G : H|",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            241.331,
+            454.423,
+            279.842
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0006",
+        "doc_e3fd0cf978ff-p0006-b0007"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0036",
+      "type": "proof",
+      "label": "Proof:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof:\nG =\n⨆︂\n[xH]∈G/H\nxH ⇒|G| =\n∑︂\n[xH]∈G/H\n|xH|",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            294.288,
+            407.271,
+            334.364
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0008",
+        "doc_e3fd0cf978ff-p0006-b0009",
+        "doc_e3fd0cf978ff-p0006-b0010",
+        "doc_e3fd0cf978ff-p0006-b0011",
+        "doc_e3fd0cf978ff-p0006-b0012",
+        "doc_e3fd0cf978ff-p0006-b0013",
+        "doc_e3fd0cf978ff-p0006-b0014",
+        "doc_e3fd0cf978ff-p0006-b0015"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0037",
+      "type": "remark",
+      "label": "Remark:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark: Using the fact that |xH| = |H| (exercise),\n=\n∑︂\n[xH]∈G/H\n|H| = |H| ∗|G/H|",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            342.751,
+            380.716,
+            397.029
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0016",
+        "doc_e3fd0cf978ff-p0006-b0017",
+        "doc_e3fd0cf978ff-p0006-b0018",
+        "doc_e3fd0cf978ff-p0006-b0019",
+        "doc_e3fd0cf978ff-p0006-b0020"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0038",
+      "type": "theorem",
+      "label": "Theorem (Lagrange):",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Theorem (Lagrange): Given two groups H < G, then |H| divides |G|, or\n|H| | |G|",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            410.896,
+            459.396,
+            449.407
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0021",
+        "doc_e3fd0cf978ff-p0006-b0022"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0039",
+      "type": "notation",
+      "label": "Terminology:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Terminology: Given G is finite, then given an element a ∈G, we define the order of a (|a|) to be the smallest n ∈Z∗∗(the smallest positive integer) such that an = 1. We can also construct a group ⟨a⟩= {g ∈G : g = an, n ∈Z}, the group of elements of G generated by a. Using Lagrange’s theorem, we can show\n|a| | |G|\nsince ⟨a⟩is a subgroup of G and so |⟨a⟩| | |G|, and |⟨a⟩| = |a| (exercise).",
+      "section": "1 Cosets",
+      "source_run": 2,
+      "pages": [
+        7
+      ],
+      "page_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            72.0,
+            463.698,
+            540.046,
+            586.393
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0006-b0023",
+        "doc_e3fd0cf978ff-p0006-b0024",
+        "doc_e3fd0cf978ff-p0006-b0025"
+      ],
+      "parent": null,
+      "references": [
+        {
+          "kind": "explicit_reference",
+          "target_text": "Lagrange’s theorem",
+          "target_segment_id": "doc_e3fd0cf978ff-S0038",
+          "resolved": true,
+          "candidates": [
+            "doc_e3fd0cf978ff-S0038"
+          ],
+          "evidence_quote": "ts of G generated by a. Using Lagrange’s theorem, we can show\n|a| | |G|\nsince"
+        }
+      ],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": [
+        "label 'Terminology' mapped to notation"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0040",
+      "type": "definition",
+      "label": "Definition",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition Given H < G, we say that H ⊴G (H is normal in G) if\n∀g ∈G, g−1Hg = H",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            98.285,
+            422.072,
+            139.253
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0001",
+        "doc_e3fd0cf978ff-p0007-b0002"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0041",
+      "type": "exercise",
+      "label": "Exercise",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Exercise TFAE:\n1) H ⊴G\n2) ∀h ∈H, ∀g ∈G, g−1hg ∈H\n3) ∀g ∈G, gH = Hg",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            153.699,
+            227.671,
+            238.879
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0003",
+        "doc_e3fd0cf978ff-p0007-b0004",
+        "doc_e3fd0cf978ff-p0007-b0005",
+        "doc_e3fd0cf978ff-p0007-b0006"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0042",
+      "type": "example",
+      "label": "Examples (Trivial):",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Examples (Trivial): Given group G, {1} ⊴G and G ⊴G.",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            263.167,
+            381.592,
+            277.734
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0007"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0043",
+      "type": "proposition",
+      "label": "Properties:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Properties: Let f : G →H be a homomorphism of group, then\nker(f) ⊴G",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            294.515,
+            403.422,
+            333.026
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0008",
+        "doc_e3fd0cf978ff-p0007-b0009"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": [
+        "label 'Properties' mapped to proposition"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0044",
+      "type": "proof",
+      "label": "Proof:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof: Let k ∈ker(f), g ∈G. We can show that g−1kg ∈ker(f):\nf(g−1kg) = f(g−1)f(k)f(g) = f(g)−1 ∗1 ∗f(g) = f(g)−1f(g) = 1",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            346.145,
+            472.524,
+            385.828
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0010",
+        "doc_e3fd0cf978ff-p0007-b0011"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0045",
+      "type": "theorem",
+      "label": "Theorem:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Theorem: Let H ⊴G, then G/H is a group structure with operation inherited from G. In particular,\n1) xH ∗yH = xyH\n2) 1H is the unit\n3) (xH)−1 = x−1H",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            412.108,
+            540.034,
+            514.346
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0012",
+        "doc_e3fd0cf978ff-p0007-b0013",
+        "doc_e3fd0cf978ff-p0007-b0014",
+        "doc_e3fd0cf978ff-p0007-b0015"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0046",
+      "type": "proof",
+      "label": "Want to prove:",
+      "is_explicitly_labeled": false,
+      "role_is_inferred": true,
+      "text": "Want to prove: Given H ⊴G, if x, x′ ∈xH, y ∈yH, then I want x′y ∈xyH, since that implies x′yH = xyH. We have that x′ = xh for some h ∈H, and so\nx′y = xhy = xy(y−1hy) ∈xyH",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            522.306,
+            539.986,
+            579.602
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0016",
+        "doc_e3fd0cf978ff-p0007-b0017"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": [
+        "label 'Want to prove' mapped to proof (goal-directed passage)"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0047",
+      "type": "definition",
+      "label": "Definition:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition: Given H ⊴G, G/H is called a quotient subgroup of G.",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            591.436,
+            423.184,
+            606.003
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0018"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0048",
+      "type": "remark",
+      "label": "Remark:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark: Given H ⊴G, πH : G →G/H given by πH(x) →[xH] is a surjective homomor- phism, and ker(πH) = H.",
+      "section": "2 Normal and Quotient Groups",
+      "source_run": 2,
+      "pages": [
+        8
+      ],
+      "page_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            72.0,
+            620.327,
+            540.007,
+            650.262
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0007-b0019"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0049",
+      "type": "proposition",
+      "label": "Properties:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Properties: (Universal property of Quotient Groups) Given H ⊴G, πH : G →G/H, and given any morphism π : G →G′ such that H ⊆ker(π), there exists a unique morphism of groups G/H →G′ such that the following diagram commutes:\nG G′\nG/H\nπ\nπH ∃!f",
+      "section": "3 Universal Properties",
+      "source_run": 2,
+      "pages": [
+        9
+      ],
+      "page_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            72.0,
+            98.285,
+            540.036,
+            207.621
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0008-b0001",
+        "doc_e3fd0cf978ff-p0008-b0002",
+        "doc_e3fd0cf978ff-p0008-b0003",
+        "doc_e3fd0cf978ff-p0008-b0004",
+        "doc_e3fd0cf978ff-p0008-b0005"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": [
+        "label 'Properties' mapped to proposition"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0050",
+      "type": "remark",
+      "label": "Remark (exericse):",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark (exericse): If π = f ◦πH is surjective then f is surjective, and f is injective if H = ker(π).",
+      "section": "3 Universal Properties",
+      "source_run": 2,
+      "pages": [
+        9
+      ],
+      "page_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            72.0,
+            228.279,
+            539.993,
+            254.835
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0008-b0006"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0051",
+      "type": "theorem",
+      "label": "Theorem (1st Isomorphism):",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Theorem (1st Isomorphism): If f : G →H is a homomorphism, then\nG/ ker(f) ∼= Im(f)",
+      "section": "3 Universal Properties",
+      "source_run": 2,
+      "pages": [
+        9
+      ],
+      "page_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            72.0,
+            271.617,
+            447.094,
+            310.626
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0008-b0007",
+        "doc_e3fd0cf978ff-p0008-b0008"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0052",
+      "type": "proof",
+      "label": "Proof:",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof: Given f : G →Im(f) ⊆H, we have that f is surjective. Given the commutative diagram:\nG Im(f)\nG/ ker(f)\nf\nxH→f(x)\n∃!ϕ\nWe can see that the surjectivity of f implies ϕ is surjective. We can also show that ϕ is injective since in the remark above, ϕ is injective if G is quotiented by ker(f). Thus ϕ is a unique bijective homomorphism, i.e. isomorphism. Exercise: Find an example H < G such that G/H is not a group.",
+      "section": "3 Universal Properties",
+      "source_run": 2,
+      "pages": [
+        9
+      ],
+      "page_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            72.0,
+            324.419,
+            540.046,
+            491.457
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0008-b0009",
+        "doc_e3fd0cf978ff-p0008-b0010",
+        "doc_e3fd0cf978ff-p0008-b0011",
+        "doc_e3fd0cf978ff-p0008-b0012",
+        "doc_e3fd0cf978ff-p0008-b0013",
+        "doc_e3fd0cf978ff-p0008-b0014",
+        "doc_e3fd0cf978ff-p0008-b0015"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0053",
+      "type": "theorem",
+      "label": "Theorem 1 (First Isomorphism Theorem).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Theorem 1 (First Isomorphism Theorem). Let f : G →H be a group homomorphism. Then\nG/ ker f ∼= im f ≤H.",
+      "section": "1 The First Isomorphism Theorem & Exact Sequences",
+      "source_run": 3,
+      "pages": [
+        10
+      ],
+      "page_regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            70.866,
+            216.988,
+            516.474,
+            252.48
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0009-b0002",
+        "doc_e3fd0cf978ff-p0009-b0003"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0054",
+      "type": "corollary",
+      "label": "Corollary 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Corollary 1. For every homomorphism f : G →H, there is a canonical decomposition:\nG ↠G/ ker f ∼ = −→im f ,→H.",
+      "section": "1 The First Isomorphism Theorem & Exact Sequences",
+      "source_run": 3,
+      "pages": [
+        10
+      ],
+      "page_regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            70.866,
+            264.624,
+            490.106,
+            301.605
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0009-b0004",
+        "doc_e3fd0cf978ff-p0009-b0005",
+        "doc_e3fd0cf978ff-p0009-b0006"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0055",
+      "type": "definition",
+      "label": "Definition 1 (Exact Sequence).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 1 (Exact Sequence). Given a sequence of group homomorphisms\n· · · −→Gi−1 fi−1 −−−→Gi fi −→Gi+1 fi+1 −−−→. . .\nit is called exact at Gi if ker fi = im fi−1.\nA special case is a short exact sequence (SES):\ne −→G1 f−→G2 g−→G3 −→e.",
+      "section": "1 The First Isomorphism Theorem & Exact Sequences",
+      "source_run": 3,
+      "pages": [
+        10
+      ],
+      "page_regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            70.866,
+            314.247,
+            438.509,
+            427.866
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0009-b0007",
+        "doc_e3fd0cf978ff-p0009-b0008",
+        "doc_e3fd0cf978ff-p0009-b0009",
+        "doc_e3fd0cf978ff-p0009-b0010",
+        "doc_e3fd0cf978ff-p0009-b0011",
+        "doc_e3fd0cf978ff-p0009-b0012",
+        "doc_e3fd0cf978ff-p0009-b0013",
+        "doc_e3fd0cf978ff-p0009-b0014",
+        "doc_e3fd0cf978ff-p0009-b0015"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0056",
+      "type": "remark",
+      "label": "Remark 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 1. In the short exact sequence above:\n1. f is injective (since ker f = im(e →G1) = {e});\n2. g is surjective (since im g = ker(G3 →e) = G3);\n3. ker g = im f.",
+      "section": "1 The First Isomorphism Theorem & Exact Sequences",
+      "source_run": 3,
+      "pages": [
+        10
+      ],
+      "page_regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            70.866,
+            439.072,
+            325.792,
+            516.759
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0009-b0016",
+        "doc_e3fd0cf978ff-p0009-b0017",
+        "doc_e3fd0cf978ff-p0009-b0018",
+        "doc_e3fd0cf978ff-p0009-b0019"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0057",
+      "type": "example",
+      "label": null,
+      "is_explicitly_labeled": false,
+      "role_is_inferred": true,
+      "text": "1. Trivial sequences: e −→e −→G ∼ = −→G −→e\ne −→G ∼ = −→G −→e −→e\n2. Cyclic quotient: e −→Z ·n −→Z −→Z/nZ −→e\n3. Matrix groups and determinants / Projective groups:\ne −→SLn(R) −→GLn(R) det −−→R∗−→e\ne −→R∗−→GLn(R) −→PGLn(R) −→e,\nwhere R∗,→GLn(R) maps λ 7→\n\n \nλ\n...\nλ\n\n .\n4. Sign map and exponential:\ne −→(R, +) exp −−→R∗sign −−→Z/2Z −→e\n5. Exponential covering map of the circle:\ne −→Z −→R −→S1 −→e,\nwith the map R →S1 given by λ 7→e2πiλ.\n6. Dihedral group: e −→Z/nZ −→D2n −→Z/2Z −→e",
+      "section": "2 Examples of Short Exact Sequences",
+      "source_run": 3,
+      "pages": [
+        10,
+        11
+      ],
+      "page_regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            84.197,
+            564.227,
+            412.522,
+            774.821
+          ]
+        },
+        {
+          "page_index": 10,
+          "bbox": [
+            84.197,
+            73.032,
+            400.297,
+            226.142
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0009-b0021",
+        "doc_e3fd0cf978ff-p0009-b0022",
+        "doc_e3fd0cf978ff-p0009-b0023",
+        "doc_e3fd0cf978ff-p0009-b0024",
+        "doc_e3fd0cf978ff-p0009-b0025",
+        "doc_e3fd0cf978ff-p0009-b0026",
+        "doc_e3fd0cf978ff-p0009-b0027",
+        "doc_e3fd0cf978ff-p0009-b0028",
+        "doc_e3fd0cf978ff-p0009-b0029",
+        "doc_e3fd0cf978ff-p0009-b0030",
+        "doc_e3fd0cf978ff-p0009-b0031",
+        "doc_e3fd0cf978ff-p0009-b0032",
+        "doc_e3fd0cf978ff-p0009-b0033",
+        "doc_e3fd0cf978ff-p0009-b0034",
+        "doc_e3fd0cf978ff-p0009-b0035",
+        "doc_e3fd0cf978ff-p0009-b0036",
+        "doc_e3fd0cf978ff-p0010-b0000",
+        "doc_e3fd0cf978ff-p0010-b0001",
+        "doc_e3fd0cf978ff-p0010-b0002",
+        "doc_e3fd0cf978ff-p0010-b0003",
+        "doc_e3fd0cf978ff-p0010-b0004",
+        "doc_e3fd0cf978ff-p0010-b0005",
+        "doc_e3fd0cf978ff-p0010-b0006"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "typed from section heading '2 Examples of Short Exact Sequences'",
+        "spans pages [9, 10]",
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0058",
+      "type": "theorem",
+      "label": "Theorem 2 (Second Isomorphism Theorem / Diamond Isomorphism Theorem).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Theorem 2 (Second Isomorphism Theorem / Diamond Isomorphism Theorem). Let G be a group, H ◁G, and K ≤G. Then:\n1. HK ≤G;\n2. H ◁HK;\n3. H ∩K ◁K;\n4. K/(H ∩K) ∼= HK/H.\nHK ≤G\nH K\nH ∩K\n◁\n◁\nCorrespondingly, we have the commutative diagram of short exact sequences:\ne H HK HK/H e\ne H ∩K K K/(H ∩K) e\n∼ =",
+      "section": "3 The Second Isomorphism Theorem",
+      "source_run": 3,
+      "pages": [
+        11
+      ],
+      "page_regions": [
+        {
+          "page_index": 10,
+          "bbox": [
+            70.866,
+            272.251,
+            524.4,
+            584.396
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0010-b0008",
+        "doc_e3fd0cf978ff-p0010-b0009",
+        "doc_e3fd0cf978ff-p0010-b0010",
+        "doc_e3fd0cf978ff-p0010-b0011",
+        "doc_e3fd0cf978ff-p0010-b0012",
+        "doc_e3fd0cf978ff-p0010-b0013",
+        "doc_e3fd0cf978ff-p0010-b0014",
+        "doc_e3fd0cf978ff-p0010-b0015",
+        "doc_e3fd0cf978ff-p0010-b0016",
+        "doc_e3fd0cf978ff-p0010-b0017",
+        "doc_e3fd0cf978ff-p0010-b0018",
+        "doc_e3fd0cf978ff-p0010-b0019",
+        "doc_e3fd0cf978ff-p0010-b0020",
+        "doc_e3fd0cf978ff-p0010-b0021"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0059",
+      "type": "proof",
+      "label": "Proof.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Proof. 1. Proof that HK ≤G: Take h1k1, h2k2 ∈HK. Consider:\nh1k1(h2k2)−1 = h1k1k−1 2 h−1 2 = h1 (k1k−1\n2 h−1 2 k2k−1 1 ) | {z } ∈H (since H◁G) k1k−1 2 ∈HK.\nThus, HK is a subgroup of G.\n2. Proof that H ◁HK: Take h′ ∈H and hk ∈HK. Then:\n(hk)h′(hk)−1 = h(kh′k−1)h−1 ∈H,\nsince H ◁G =⇒kh′k−1 ∈H.\n3. Proof that H ∩K ◁K: Let x ∈H ∩K and k ∈K. Since x ∈H and H ◁G, we have k−1xk ∈H. Moreover, since x, k ∈K, we have k−1xk ∈K. Hence, k−1xk ∈H ∩K.\n4. Proof that K/(H ∩K) ∼= HK/H: Consider the composition map ϕ: K ,→HK ↠HK/H:\nK HK\nHK/H\nφ\ndefined by ϕ(k) = kH.\n• ϕ is surjective: for any hkH ∈HK/H, since h ∈H, hkH = kH = ϕ(k).\n• ker ϕ = {k ∈K | kH = H} = {k ∈K | k ∈H} = H ∩K.\nBy the First Isomorphism Theorem, we conclude that\nK/(H ∩K) ∼= HK/H.",
+      "section": "3 The Second Isomorphism Theorem",
+      "source_run": 3,
+      "pages": [
+        11,
+        12
+      ],
+      "page_regions": [
+        {
+          "page_index": 10,
+          "bbox": [
+            70.866,
+            599.385,
+            465.201,
+            773.407
+          ]
+        },
+        {
+          "page_index": 11,
+          "bbox": [
+            84.197,
+            73.032,
+            524.401,
+            313.672
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0010-b0022",
+        "doc_e3fd0cf978ff-p0010-b0023",
+        "doc_e3fd0cf978ff-p0010-b0024",
+        "doc_e3fd0cf978ff-p0010-b0025",
+        "doc_e3fd0cf978ff-p0010-b0026",
+        "doc_e3fd0cf978ff-p0010-b0027",
+        "doc_e3fd0cf978ff-p0010-b0028",
+        "doc_e3fd0cf978ff-p0010-b0029",
+        "doc_e3fd0cf978ff-p0010-b0030",
+        "doc_e3fd0cf978ff-p0010-b0031",
+        "doc_e3fd0cf978ff-p0011-b0000",
+        "doc_e3fd0cf978ff-p0011-b0001",
+        "doc_e3fd0cf978ff-p0011-b0002",
+        "doc_e3fd0cf978ff-p0011-b0003",
+        "doc_e3fd0cf978ff-p0011-b0004",
+        "doc_e3fd0cf978ff-p0011-b0005",
+        "doc_e3fd0cf978ff-p0011-b0006",
+        "doc_e3fd0cf978ff-p0011-b0007",
+        "doc_e3fd0cf978ff-p0011-b0008",
+        "doc_e3fd0cf978ff-p0011-b0009"
+      ],
+      "parent": null,
+      "references": [
+        {
+          "kind": "explicit_reference",
+          "target_text": "First Isomorphism Theorem",
+          "target_segment_id": "doc_e3fd0cf978ff-S0053",
+          "resolved": true,
+          "candidates": [
+            "doc_e3fd0cf978ff-S0053"
+          ],
+          "evidence_quote": "{k ∈K | k ∈H} = H ∩K.\nBy the First Isomorphism Theorem, we conclude that\nK/(H ∩K) ∼="
+        }
+      ],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "spans pages [10, 11]",
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0060",
+      "type": "theorem",
+      "label": "Theorem 3 (Third Isomorphism Theorem / Correspondence Theorem).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Theorem 3 (Third Isomorphism Theorem / Correspondence Theorem). Let G be a group, H ◁G, and πH : G →G/H be the canonical projection. Then:\n1. There is a bijective inclusion-preserving correspondence:\n{K | H ≤K ≤G} 1:1 ←→{ ¯K ≤G/H}, where ¯K = K/H.\n2. The correspondence preserves normality:\nK ◁G ⇐⇒K/H ◁G/H.\n3. The correspondence preserves quotients:\n(G/H)\n\u000e (K/H) ∼= G/K.",
+      "section": "4 The Third Isomorphism Theorem",
+      "source_run": 3,
+      "pages": [
+        12
+      ],
+      "page_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            70.866,
+            382.567,
+            524.413,
+            549.567
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0011-b0011",
+        "doc_e3fd0cf978ff-p0011-b0012",
+        "doc_e3fd0cf978ff-p0011-b0013",
+        "doc_e3fd0cf978ff-p0011-b0014",
+        "doc_e3fd0cf978ff-p0011-b0015",
+        "doc_e3fd0cf978ff-p0011-b0016",
+        "doc_e3fd0cf978ff-p0011-b0017",
+        "doc_e3fd0cf978ff-p0011-b0018",
+        "doc_e3fd0cf978ff-p0011-b0019"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0061",
+      "type": "exercise",
+      "label": "Exercise 1.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Exercise 1. Prove the Third Isomorphism Theorem.",
+      "section": "4 The Third Isomorphism Theorem",
+      "source_run": 3,
+      "pages": [
+        12
+      ],
+      "page_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            70.866,
+            564.171,
+            326.015,
+            575.08
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0011-b0020"
+      ],
+      "parent": null,
+      "references": [
+        {
+          "kind": "explicit_reference",
+          "target_text": "Third Isomorphism Theorem",
+          "target_segment_id": "doc_e3fd0cf978ff-S0060",
+          "resolved": true,
+          "candidates": [
+            "doc_e3fd0cf978ff-S0060"
+          ],
+          "evidence_quote": "Prove the Third Isomorphism Theorem."
+        }
+      ],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0062",
+      "type": "definition",
+      "label": "Definition 2 (Group Action).",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Definition 2 (Group Action). Let G be a group and X be a set. An action of G on X (denoted G ↷X) is a map\nρ: G × X −→X, (g, x) 7−→g · x\nsatisfying:\n1. 1G · x = x for all x ∈X;\n2. g1 · (g2 · x) = (g1g2) · x for all g1, g2 ∈G and x ∈X.",
+      "section": "5 Group Actions",
+      "source_run": 3,
+      "pages": [
+        12
+      ],
+      "page_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            70.866,
+            622.558,
+            524.409,
+            723.448
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0011-b0022",
+        "doc_e3fd0cf978ff-p0011-b0023",
+        "doc_e3fd0cf978ff-p0011-b0024",
+        "doc_e3fd0cf978ff-p0011-b0025",
+        "doc_e3fd0cf978ff-p0011-b0026"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": false,
+      "warnings": []
+    },
+    {
+      "id": "doc_e3fd0cf978ff-S0063",
+      "type": "remark",
+      "label": "Remark 2.",
+      "is_explicitly_labeled": true,
+      "role_is_inferred": false,
+      "text": "Remark 2. A group action ρ is equivalent to a group homomorphism:\nG ρ −−−−→Iso(X).",
+      "section": "5 Group Actions",
+      "source_run": 3,
+      "pages": [
+        12
+      ],
+      "page_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            70.866,
+            731.414,
+            410.648,
+            764.773
+          ]
+        }
+      ],
+      "source_block_ids": [
+        "doc_e3fd0cf978ff-p0011-b0027",
+        "doc_e3fd0cf978ff-p0011-b0028",
+        "doc_e3fd0cf978ff-p0011-b0029"
+      ],
+      "parent": null,
+      "references": [],
+      "provenance": "rule_based",
+      "extraction_method": "rule_based",
+      "needs_review": true,
+      "warnings": [
+        "contains blocks merged from split fragments"
+      ]
+    }
+  ],
+  "skipped_pages": [
+    {
+      "page_index": 12,
+      "reason": "route=embedded_ocr_layer: text layer not trusted; needs OCR/vision transcription before segmentation"
+    },
+    {
+      "page_index": 13,
+      "reason": "route=embedded_ocr_layer: text layer not trusted; needs OCR/vision transcription before segmentation"
+    },
+    {
+      "page_index": 14,
+      "reason": "route=embedded_ocr_layer: text layer not trusted; needs OCR/vision transcription before segmentation"
+    },
+    {
+      "page_index": 15,
+      "reason": "route=embedded_ocr_layer: text layer not trusted; needs OCR/vision transcription before segmentation"
+    },
+    {
+      "page_index": 16,
+      "reason": "route=embedded_ocr_layer: text layer not trusted; needs OCR/vision transcription before segmentation"
+    },
+    {
+      "page_index": 17,
+      "reason": "route=embedded_ocr_layer: text layer not trusted; needs OCR/vision transcription before segmentation"
+    }
+  ],
+  "annotations": [],
+  "notes": [
+    "Chunk text is exact source text; no paraphrase or correction.",
+    "type/label reflect rule- or model-based interpretation; check provenance and role_is_inferred.",
+    "references are explicit mentions only; no inferred dependencies are included."
+  ]
+}

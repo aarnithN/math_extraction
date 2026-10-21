@@ -1,0 +1,94 @@
+{
+  "theorem": {
+    "is_math": true,
+    "desc": "Stated theorem"
+  },
+  "lemma": {
+    "is_math": true,
+    "desc": "Stated lemma"
+  },
+  "proposition": {
+    "is_math": true,
+    "desc": "Stated proposition or property"
+  },
+  "corollary": {
+    "is_math": true,
+    "desc": "Stated corollary"
+  },
+  "definition": {
+    "is_math": true,
+    "desc": "Definition, formal or informal"
+  },
+  "axiom": {
+    "is_math": true,
+    "desc": "Axiom or standing assumption"
+  },
+  "assumption": {
+    "is_math": true,
+    "desc": "Assumption"
+  },
+  "conjecture": {
+    "is_math": true,
+    "desc": "Conjecture or hypothesis"
+  },
+  "claim": {
+    "is_math": true,
+    "desc": "Claim or subclaim, labeled or not"
+  },
+  "proof": {
+    "is_math": true,
+    "desc": "A proof or proof segment"
+  },
+  "proof_step": {
+    "is_math": true,
+    "desc": "A distinct step inside a proof (model annotation)"
+  },
+  "derivation": {
+    "is_math": true,
+    "desc": "Chain of computations"
+  },
+  "equation": {
+    "is_math": true,
+    "desc": "Standalone equation or inequality"
+  },
+  "example": {
+    "is_math": true,
+    "desc": "Example"
+  },
+  "counterexample": {
+    "is_math": true,
+    "desc": "Counterexample / non-example"
+  },
+  "remark": {
+    "is_math": true,
+    "desc": "Remark, note, observation, idea"
+  },
+  "observation": {
+    "is_math": true,
+    "desc": "Observation"
+  },
+  "exercise": {
+    "is_math": true,
+    "desc": "Exercise left to the reader"
+  },
+  "notation": {
+    "is_math": true,
+    "desc": "Notation, convention or terminology"
+  },
+  "mathematical_passage": {
+    "is_math": true,
+    "desc": "Mathematical text that fits no other type"
+  },
+  "unknown": {
+    "is_math": true,
+    "desc": "Unclear; kept, flagged for review"
+  },
+  "section_heading": {
+    "is_math": false,
+    "desc": "Heading (context only)"
+  },
+  "boilerplate": {
+    "is_math": false,
+    "desc": "Dates, page numbers, running headers"
+  }
+}

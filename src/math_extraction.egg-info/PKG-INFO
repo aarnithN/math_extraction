@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: math-extraction
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: pymupdf==1.28.2
+Requires-Dist: pydantic==2.14.1
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: fastapi; extra == "dev"
+Requires-Dist: httpx; extra == "dev"
+Requires-Dist: python-multipart; extra == "dev"
+Provides-Extra: app
+Requires-Dist: fastapi; extra == "app"
+Requires-Dist: uvicorn; extra == "app"
+Requires-Dist: python-multipart; extra == "app"
+Provides-Extra: llm
+Requires-Dist: anthropic; extra == "llm"

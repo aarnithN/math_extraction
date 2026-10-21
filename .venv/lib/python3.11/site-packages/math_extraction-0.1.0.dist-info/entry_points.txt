@@ -1,0 +1,3 @@
+[console_scripts]
+math-eval = math_extraction.evaluation:main
+math-extract = math_extraction.cli:main

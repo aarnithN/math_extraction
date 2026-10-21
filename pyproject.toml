@@ -1,0 +1,21 @@
+[project]
+name = "math-extraction"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["pymupdf==1.28.2", "pydantic==2.14.1"]
+
+[project.optional-dependencies]
+dev = ["pytest", "fastapi", "httpx", "python-multipart"]
+app = ["fastapi", "uvicorn", "python-multipart"]
+llm = ["anthropic"]
+
+[project.scripts]
+math-extract = "math_extraction.cli:main"
+math-eval = "math_extraction.evaluation:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

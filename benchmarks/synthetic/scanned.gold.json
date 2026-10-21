@@ -1,0 +1,107 @@
+{
+ "name": "scanned",
+ "has_text_layer": false,
+ "segments": [
+  {
+   "id": "g0",
+   "type": "definition",
+   "label": "Definition 1.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Definition 1. A sequence of real numbers is bounded if there is such that for all .",
+   "inner_claims": [],
+   "formulas": [
+    "|a_n|\\le M"
+   ]
+  },
+  {
+   "id": "g1",
+   "type": "definition",
+   "label": "Definition 2.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Definition 2. A subsequence of is a sequence where are positive integers.",
+   "inner_claims": [],
+   "formulas": [
+    "n_1<n_2<\\cdots"
+   ]
+  },
+  {
+   "id": "g2",
+   "type": "remark",
+   "label": "Remark 1.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Remark 1. Boundedness is used below only through the bound .",
+   "inner_claims": [],
+   "formulas": []
+  },
+  {
+   "id": "g3",
+   "type": "lemma",
+   "label": "Lemma 1.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Lemma 1. Every sequence of real numbers has a monotone subsequence.",
+   "inner_claims": [],
+   "formulas": []
+  },
+  {
+   "id": "g4",
+   "type": "proof",
+   "label": "Proof.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Proof. Call an index a peak if for all . If there are infinitely many peaks, list them as ; then is a monotone subsequence. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Otherwise there is a last peak , and starting from we can choose indices with which is again monotone. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. Observe that every index either is a peak or is not a peak, and that the set of indices after a given index is again infinite, so the argument can be repeated without loss of generality. This proves the lemma.",
+   "inner_claims": [],
+   "formulas": [
+    "a_{m_1}<a_{m_2}<a_{m_3}<\\cdots"
+   ]
+  },
+  {
+   "id": "g5",
+   "type": "theorem",
+   "label": "Theorem 2 (Bolzano--Weierstrass).",
+   "is_explicitly_labeled": true,
+   "text_plain": "Theorem 2 (Bolzano--Weierstrass). Every bounded sequence of real numbers has a convergent subsequence.",
+   "inner_claims": [],
+   "formulas": []
+  },
+  {
+   "id": "g6",
+   "type": "proof",
+   "label": "Proof.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Proof. Let be bounded. By Lemma 1 it has a monotone subsequence. Since the sequence is bounded, we may choose a convergent subsequence. Indeed, a bounded monotone sequence converges, and so the subsequence converges to some with .",
+   "inner_claims": [
+    "Since the sequence is bounded, we may choose a convergent subsequence."
+   ],
+   "formulas": [
+    "|L|\\le M"
+   ]
+  },
+  {
+   "id": "g7",
+   "type": "example",
+   "label": "Example 1.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Example 1. The sequence is bounded and has the convergent subsequence .",
+   "inner_claims": [],
+   "formulas": []
+  },
+  {
+   "id": "g8",
+   "type": "exercise",
+   "label": "Exercise 1.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Exercise 1. Show that the hypothesis of boundedness cannot be dropped.",
+   "inner_claims": [],
+   "formulas": []
+  },
+  {
+   "id": "g9",
+   "type": "notation",
+   "label": "Notation 1.",
+   "is_explicitly_labeled": true,
+   "text_plain": "Notation 1. We write for a subsequence.",
+   "inner_claims": [],
+   "formulas": []
+  }
+ ],
+ "notes": "Synthetic. Types are those a human would assign; inner_claims are unlabeled sentences inside a proof."
+}
