@@ -97,6 +97,7 @@ def parse_pdf(pdf_path: Path, out_dir: Path, dpi: int = 150,
             blk = SourceBlock(
                 block_type="text", raw_text=raw, normalized_text=" ".join(raw.split()),
                 fonts=fonts, max_font_size=max((s["size"] for s in spans), default=None),
+                baseline=round(sorted(s["origin"][1] for s in spans)[len(spans) // 2], 3) if spans else None,
                 has_math_font=has_math, has_bold=any(f & 16 for f in flags) or any("Bold" in s["font"] for s in spans),
                 has_italic=any(f & 2 for f in flags) or any("Italic" in s["font"] for s in spans),
                 provenance=prov, ocr_status=ocr, needs_review=review, warnings=warnings, **common)

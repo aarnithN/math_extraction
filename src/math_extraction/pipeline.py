@@ -8,8 +8,10 @@ import pymupdf
 
 from .annotations import read_annotations
 from .block_merge import build_logical_blocks
-from .export import add_explicit_references, export_math_chunks
+from .export import add_explicit_references, attach_figures, export_math_chunks
+from .figures import detect_figures, detect_redactions
 from .layout import reorder_columns
+from .math_symbols import build_inventory, extract_math
 from .llm import LLMClient, combine, llm_segment, omission_pass
 from .pdf_parser import parse_pdf, write_outputs
 from .segmentation import segment_rules
@@ -24,7 +26,7 @@ def _jsonl(path: Path, items) -> None:
 
 
 def run_pipeline(pdf: Path, out: Path, dpi: int = 100, client: LLMClient | None = None,
-                 taxonomy_path: str | None = None, reorder: bool = True) -> dict:
+                 taxonomy_path: str | None = None, reorder: bool = True, verify_latex: bool = False) -> dict:
     taxonomy = load_taxonomy(taxonomy_path)
     meta, pages, blocks = parse_pdf(pdf, out, dpi=dpi)
     root = write_outputs(out, meta, pages, blocks)
@@ -35,6 +37,17 @@ def run_pipeline(pdf: Path, out: Path, dpi: int = 100, client: LLMClient | None 
     _jsonl(root / "annotations.jsonl", anns)
 
     logical = build_logical_blocks(meta["document_id"], blocks, pages)
+    exprs = extract_math(pdf, meta["document_id"], blocks, logical, pages)
+    verify = None
+    if verify_latex:
+        from .latex_verify import verify_expressions
+        verify = verify_expressions(exprs)
+    _jsonl(root / "math_expressions.jsonl", exprs)
+    (root / "symbol_inventory.json").write_text(json.dumps(build_inventory(exprs), indent=2, ensure_ascii=False), encoding="utf-8")
+    figures = detect_figures(pdf, meta["document_id"], blocks, logical, pages, root)
+    _jsonl(root / "figures.jsonl", figures)
+    redactions = detect_redactions(pdf, meta["document_id"])
+    (root / "redactions.json").write_text(json.dumps(redactions, indent=2), encoding="utf-8")
     twocol: list[int] = []
     if reorder:
         logical, twocol = reorder_columns(logical, pages)
@@ -50,9 +63,11 @@ def run_pipeline(pdf: Path, out: Path, dpi: int = 100, client: LLMClient | None 
         segs = combine(merged, extra)
         rejected = rej1 + rej2
     add_explicit_references(segs)
+    attach_figures(segs, figures)
     _jsonl(root / "segments.jsonl", segs)
     (root / "rejected_llm_segments.json").write_text(json.dumps(rejected, indent=2), encoding="utf-8")
-    chunks = export_math_chunks(meta, segs, taxonomy, skipped, anns)
+    chunks = export_math_chunks(meta, segs, taxonomy, skipped, anns, figures)
+    chunks["redacted_regions"] = redactions
     (root / "math_chunks.json").write_text(json.dumps(chunks, indent=2, ensure_ascii=False), encoding="utf-8")
     return dict(root=root, meta=meta, pages=pages, blocks=blocks, logical=logical, segments=segs, skipped=skipped,
-                issues=issues, annotations=anns, two_column_pages=twocol, rejected=rejected)
+                issues=issues, annotations=anns, expressions=exprs, latex_verification=verify, figures=figures, redactions=redactions, two_column_pages=twocol, rejected=rejected)

@@ -18,13 +18,14 @@ def main(argv=None) -> int:
                     help="add the LLM segmentation + omission pass (needs `pip install anthropic` and ANTHROPIC_API_KEY; "
                          "sends block TEXT to the provider)")
     ap.add_argument("--no-column-reorder", action="store_true")
+    ap.add_argument("--verify-latex", action="store_true", help="compile each reconstructed expression with pdflatex and re-extract it (needs pdflatex)")
     a = ap.parse_args(argv)
 
     client = None
     if a.llm:
         from .llm import AnthropicClient
         client = AnthropicClient()
-    r = run_pipeline(a.pdf, a.out, dpi=a.dpi, client=client, reorder=not a.no_column_reorder)
+    r = run_pipeline(a.pdf, a.out, dpi=a.dpi, client=client, reorder=not a.no_column_reorder, verify_latex=a.verify_latex)
     if a.overlay:
         write_overlays(a.pdf, r["root"], r["pages"], r["blocks"])
     segs = r["segments"]
@@ -33,6 +34,10 @@ def main(argv=None) -> int:
     print("routes:", dict(Counter(p.route.value for p in r["pages"])))
     print("segments:", len(segs), dict(Counter(s.segment_type for s in segs)))
     print("skipped pages (need OCR/vision):", [s["page_index"] + 1 for s in r["skipped"]])
+    print("math expressions:", len(r["expressions"]), "(partial:", sum(e.status == "partial" for e in r["expressions"]), ")",
+          " figures:", dict(Counter(f.kind for f in r["figures"])), " redacted regions:", len(r["redactions"]))
+    if r.get("latex_verification"):
+        print("latex round-trip:", r["latex_verification"])
     print("annotations:", len(r["annotations"]), " two-column pages:", r["two_column_pages"])
     print("validation:", dict(Counter((i['severity'], i['code']) for i in r["issues"])))
     print("main output:", r["root"] / "math_chunks.json")

@@ -69,6 +69,7 @@ class SourceBlock(BaseModel):
     bbox: BBox
     fonts: list[str] = Field(default_factory=list)
     max_font_size: Optional[float] = None
+    baseline: Optional[float] = None        # median span origin y (page space); used to tell same-line fragments from other lines
     has_math_font: bool = False
     has_bold: bool = False
     has_italic: bool = False
@@ -89,6 +90,87 @@ class PageRegion(BaseModel):
     bbox: BBox
 
 
+class MathSymbol(BaseModel):
+    """One glyph of a math expression, identified deterministically from font + Unicode + geometry."""
+    char: str                       # as extracted (Unicode), may be a private-use or control char if unmapped
+    code: int
+    macro: Optional[str] = None     # LaTeX token, e.g. \\trianglelefteq; None if unmapped
+    cls: Optional[str] = None       # greek|rel|bin|arrow|log|ord|op|open|close|punct|letter|digit|accent|name
+    role: Literal["base", "sup", "sub", "num", "den", "radicand", "over", "under"] = "base"
+    font: str = ""
+    bbox: BBox
+    mapped: bool = True
+    source: Literal["table", "font_rule", "composite", "literal", "unmapped"] = "table"
+
+
+class MathExpression(BaseModel):
+    document_id: str
+    expression_id: str
+    page_index: int
+    bbox: BBox
+    source_block_ids: list[str]
+    logical_id: Optional[str] = None
+    text: str                       # characters as the parser reports them (lossy)
+    latex: str                      # deterministic reconstruction
+    symbols: list[MathSymbol] = Field(default_factory=list)
+    structures: list[str] = Field(default_factory=list)     # scripts, fraction, sqrt, accent, long_arrow, negation ...
+    unsupported: list[str] = Field(default_factory=list)    # structures we saw but could not reconstruct
+    status: Literal["complete", "partial"] = "complete"
+    chain: Optional[dict] = None    # arrow chains (e.g. exact sequences): nodes + labelled edges
+    roundtrip: Optional[dict] = None
+    provenance: Provenance = Provenance.RULE_BASED
+    needs_review: bool = False
+    warnings: list[str] = Field(default_factory=list)
+
+
+class FigureNode(BaseModel):
+    node_id: str
+    kind: Literal["text", "circle", "region", "unknown"] = "text"
+    bbox: BBox
+    text: str = ""
+    latex: Optional[str] = None
+    source_block_ids: list[str] = Field(default_factory=list)
+
+
+class FigureEdge(BaseModel):
+    edge_id: str
+    kind: Literal["arrow", "line", "contains"] = "arrow"
+    src: Optional[str] = None
+    dst: Optional[str] = None
+    directed: bool = True
+    style: Literal["solid", "dashed", "double", "curved"] = "solid"
+    head: Optional[str] = None      # arrowhead shape if any
+    tail: Optional[str] = None      # e.g. "hook"
+    label_text: Optional[str] = None
+    label_latex: Optional[str] = None
+    label_node_id: Optional[str] = None
+    points: list[tuple[float, float]] = Field(default_factory=list)
+    bbox: BBox
+    warnings: list[str] = Field(default_factory=list)
+
+
+class FigureBlock(BaseModel):
+    """A diagram/plot/graph found in the vector drawing layer, kept apart from text blocks."""
+    document_id: str
+    figure_id: str
+    page_index: int
+    bbox: BBox
+    kind: Literal["arrow_diagram", "graph_network", "function_plot", "region_diagram", "line_diagram",
+                  "raster_image", "ink_drawing", "unclassified_drawing"]
+    claimed_block_ids: list[str] = Field(default_factory=list)   # source text blocks absorbed (labels/nodes)
+    nodes: list[FigureNode] = Field(default_factory=list)
+    edges: list[FigureEdge] = Field(default_factory=list)
+    axes: Optional[dict] = None
+    curves: list[dict] = Field(default_factory=list)
+    n_drawings: int = 0
+    crop_ref: Optional[str] = None
+    crop_dpi: Optional[int] = None
+    structure_status: Literal["recovered", "partial", "not_attempted"] = "partial"
+    provenance: Provenance = Provenance.RULE_BASED
+    needs_review: bool = True
+    warnings: list[str] = Field(default_factory=list)
+
+
 class LogicalBlock(BaseModel):
     """Layer A': one or more SourceBlocks treated as a unit (e.g. an equation the parser split).
     Source blocks are never modified; merging happens only here."""
@@ -105,6 +187,9 @@ class LogicalBlock(BaseModel):
     max_font_size: Optional[float] = None
     provenance: Provenance
     merge_reason: Optional[str] = None
+    latex_text: Optional[str] = None        # text with math zones as $...$ (deterministic reconstruction)
+    expression_ids: list[str] = Field(default_factory=list)
+    figure_id: Optional[str] = None         # set when this block was claimed by a figure (label/node text)
     needs_review: bool = False
     warnings: list[str] = Field(default_factory=list)
 
@@ -159,6 +244,9 @@ class Segment(BaseModel):
     alternatives: list[str] = Field(default_factory=list)
     parent_segment_id: Optional[str] = None
     references: list[Reference] = Field(default_factory=list)
+    figure_ids: list[str] = Field(default_factory=list)
+    expression_ids: list[str] = Field(default_factory=list)
+    text_latex: Optional[str] = None
     provenance: Provenance
     extraction_method: str = "rule_based"
     interpretation_status: Literal["proposed", "verified", "rejected"] = "proposed"

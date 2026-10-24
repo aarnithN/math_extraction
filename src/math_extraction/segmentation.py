@@ -88,6 +88,8 @@ def segment_rules(document_id: str, blocks: list[LogicalBlock], pages: list[Page
             document_id=document_id, segment_id=f"{document_id}-S{len(segs):04d}", segment_type=cur["type"],
             source_block_ids=[m for b in bl for m in b.member_block_ids], logical_block_ids=[b.logical_id for b in bl],
             exact_source_text="\n".join(b.normalized_text for b in bl), page_regions=regions,
+            text_latex="\n".join((b.latex_text or b.normalized_text) for b in bl),
+            expression_ids=[e for b in bl for e in b.expression_ids],
             document_order=len(segs), section_title=cur["section"], source_run=cur["run"],
             explicit_label=cur["label"], is_explicitly_labeled=cur["labeled"], role_is_inferred=cur["inferred"],
             provenance=Provenance.RULE_BASED, extraction_method="rule_based",
@@ -111,6 +113,8 @@ def segment_rules(document_id: str, blocks: list[LogicalBlock], pages: list[Page
                     close(); run += 1
                 run_header = b.normalized_text
             continue
+        if b.figure_id:
+            continue                       # label/node text of a figure: not prose
         if is_boilerplate(b):
             continue
         if is_heading(b):
